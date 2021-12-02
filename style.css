@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  height: 80vh;
+  background: #130f40;
+}
+
+h1 {
+  color: #686de0;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.container {
+  width: 90%;
+}
+
+.forInput {
+  display: flex;
+  justify-content: center;
+}
+
+.inputField {
+  width: 250px;
+  outline: none;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.addBtn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 23px;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.addBtn:hover {
+  color: #fff;
+  background: #f44336;
+}
+
+.toDoContainer {
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+}
+
+.paraStyle {
+  position: relative;
+  margin:  0;
+  padding: 10px 30px;
+  background-color: #eee;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paraStyle:hover {
+  background-color: #ccc;
+}
+
+.pChecked {
+  background-color: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.pChecked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 12px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 12px;
+  width: 7px;
+}
+
+.deleteStyle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+
+.deleteStyle:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  
+  h1{
+    font-size: 20px;
+  }
+
+  .inputField {
+    width: 120px;
+    outline: none;
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+  
+  .addBtn {
+    padding: 0.3rem;
+    font-size: 15px;
+  }
+}
